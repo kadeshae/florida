@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	
+}/*resets*/
+
+body{	
+	background-color: #999;
+}
+
+#myCanvas{
+	/*style the canvas*/
+	/*border: 1px solid #000000;*/
+	background-image:url("black");
+	background-position: center center;
+	background-size: contain;
+	
+	
+}
+
+#showMax{
+	background-color:#B0FF6C;
+}
+
+#showMin{
+	background-color:#FF7F81;
+}
+
+#showAvg{
+	background-color:#81E0FF;
+}
+
+
+@media only screen  and (min-width: 1000px) {/*for screens at least 1000, in other words large*/
+#container {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+}
+
+	#showMax,#showMin,#showAvg{
+		display:inline-block;
+		width:31%;
+		text-align: center;
+		font-size: 18px;
+		padding:10px;
+		margin:1%;
+		border-radius: 10px;
+		
+	}	
+	
+}
+
+@media only screen  and (max-width: 999px) {
+/*any viewport smaller than 1000*/
+#container {
+width: 99.5%;/*be as wide as the screen*/	
+	background-color: #FFF;
+	padding-bottom: 1%;
+}
+
+	#showMax,#showMin,#showAvg{
+		display:block;
+		width:98%;
+		text-align: center;
+		font-size: 3vw;
+		padding:1%;
+		margin:1%;
+		border-radius: 10px;
+		
+	}		
+	
+}/*end media query*/
